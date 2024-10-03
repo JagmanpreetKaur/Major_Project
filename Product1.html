@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+          body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+     .product-section {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       background-color: #000;
+       color: #fff;
+        padding: 50px;
+       flex-grow: 1;
+    }
+    .product-description {
+    max-width: 50%;
+        
+    }
+   .product-description h1 {
+     font-size: 4em;
+     font-weight: bold;
+    margin-bottom: 20px;
+    }
+   .product-description p {
+    font-size: 1.2em;
+     margin-bottom: 30px;
+        }
+ .product-description .order-btn {
+    background-color: #ffd700;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    }
+   .product-description .order-btn:hover {
+      background-color: #ffcc00;
+     }
+
+    .product-image {
+      max-width: 40%;
+    }
+
+    .product-image img {
+      max-width: 100%;
+    }
+    table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th{
+            border: 1px;
+            color: #F9ED32;
+            padding: 10px;
+			text-align: left;
+        }
+		td {
+			border: 1px;
+            color: #F2F2F2;
+			padding: 10px;
+			text-align: left;
+		}
+		
+		th {
+			background-color: #414141;
+		}
+		
+		tr:nth-child(even) {
+			background-color:  #414141;
+		}
+		
+		.transparent-table {
+			background-color:  #414141 ;
+		}
+        .table{
+            background-color: black;
+            height: fit-content;
+            text-align: center;
+             width: 60%;
+             position: relative;
+            left: 20%;
+           backdrop-filter: blur(5px);
+        }
+ 
+ </style>
+ </head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Rhyno EV Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./AboutUs.html" target="_self">About Us</a></li>
+                <li><a href="#" target="_blank">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="./Product1.html" target="_self">SE03 Lite</a></li>
+                        <li><a href="./Product2.html" target="_self">SE03</a></li>
+                        <li><a href="./Product3.html" target="_self">SE03 Max</a></li>
+                        <li><a href="./Compare.html" target="_self">Compare All</a></li>
+                    </ul>
+		</li>
+		<li><a href="./Rentals.html" target="_self">Rentals</a></li>
+                <li><a href="./ContactUs.html" target="_self">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+ <div class="product-section">
+        <div class="product-description">
+            <h1>Rhyno SE03 Lite</h1>
+            <p>Indulge in the perfect harmony of power and range with this Rhyno. <br>
+                Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive 80-100km range on a single charge. <br>
+                Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno.<br>
+                 Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.<br>
+                Check out the other details below!</p>
+            <a href="#" class="order-btn">Order Now</a>
+        </div>
+        <div class="product-image">
+            <img src="rhyno-se03-lite.png" alt="Rhyno SE03 Lite Image">
+        </div>
+    </div>
+    <div class="table">
+        <table class="transparent-table">
+            <tr>
+                <th>Specification</th>
+                <th>RhynoSE03 Lite</th>
+                
+                
+            </tr>
+            <tr>
+                <td>Battery</td>
+                <td>1.8Kwh</td>
+                
+            </tr>
+            <tr>
+                <td>Battery features</td>
+                <td> LFP with 1500 cycles<br>
+                    Active
+                    Balancing<br>
+                    Waterproof
+                    (IP67)</td>
+                
+            </tr>
+            <tr>
+                <td>Battery Warranty</td>
+                <td>3 years</td>
+                
+            </tr>
+            <tr>
+                <td>Charging time</td>
+                <td>3 hours(12A)</td>
+                
+            </tr>
+            <tr>
+                <td>Motor</td>
+                <td>1500W</td>
+                
+            </tr>
+            <tr>
+                <td>Max speed</td>
+                <td>55 km/h</td>
+                
+            </tr>
+            <tr>
+                <td>Warranty on <br> electonics</td>
+                <td>1 year</td>
+                
+            </tr>
+            <tr>
+                <td>Max range <br>(@30 km/h)</td>
+                <td>100 km</td>
+                
+            </tr>
+            <tr>
+                <td>Max range <br>(@45 km/h)</td>
+                <td>90 km</td>
+                
+            </tr>
+            <tr>
+                <td>Max range <br>(@ full speed)</td>
+                <td>60 km</td>
+                
+            </tr>
+            <tr>
+                <td>Other key benefits</td>
+                <td> Fire-safe
+                    Battery<br>
+                    Range
+                    prediction<br>
+                    Comfortable
+                    ride<br>
+                    Stable and
+                    safe</td>
+                
+            </tr>
+        </table>
+        </div>
+  <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Careers</a>
+            <div class="social-icons">
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
