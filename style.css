@@ -1,0 +1,306 @@
+body {
+  background-image: url("./bg rhyno.jpg");
+  font-family: 'Poppins', sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: #131313; 
+  color: #FFFFFF; 
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgba(37, 37, 37, 0.9); 
+  padding: 10px;
+  backdrop-filter: blur(5px); 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height:60px;
+  width: 150px;
+  filter: brightness(1.2); 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  position: relative; 
+}
+nav ul li a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: larger;
+}
+
+nav ul li ul.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2C2A2A;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  min-width: 150px; 
+  z-index: 1; 
+}
+
+nav ul li:hover ul.dropdown {
+  display: block;
+}
+
+nav ul li ul.dropdown li {
+  position: relative; 
+}
+
+nav ul li ul.dropdown li a {
+  color: #FFF;
+  padding: 5px 20px;
+  display: block;
+  white-space: nowrap;
+}
+
+nav ul li ul.dropdown li a:hover {
+  background-color: #F9ED32; 
+  color: #131313;
+}
+
+nav ul li:hover ul.dropdown {
+  display: block;
+}
+
+nav ul li ul.dropdown:hover {
+  display: block;
+}
+
+.hero {
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 43px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: #F9ED32;
+  text-shadow: 0px 0px 15px #F9ED32;
+}
+
+.hero .option {
+  background-color: transparent;
+  border: 2px solid #F9ED32;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #F9ED32;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.4s ease;
+  box-shadow: 0px 0px 15px #F9ED32;
+}
+
+.hero .option:hover {
+  background-color: #F9ED32;
+  color: #131313;
+  box-shadow: 0px 0px 25px #F9ED32;
+}
+
+.usp-carousel {
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.usp-carousel h1 {
+  margin-bottom: 20px; 
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.carousel-big {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0px 0px 25px #F9ED32;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  width: 300px; 
+  position: relative;
+  justify-content: center;
+}
+
+.carousel-item {
+  min-width: 250px;
+  height: 350px;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-item h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: #F9ED32;
+  z-index: 2;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.description-box {
+  max-width: 300px;
+  text-align: left;
+}
+
+.description-box .description {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #131313;
+}
+
+.product {
+  text-align: center;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.product:hover img {
+  transform: scale(1.1);
+}
+
+.product h3 {
+  margin: 15px 0;
+  color: #F9ED32; 
+}
+
+.product .option {
+  background-color: #F9ED32;
+  color: #252525;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0px 0px 15px #F9ED32;
+}
+
+.product .option:hover {
+  background-color: #FFFFFF;
+  color: #252525;
+  box-shadow: 0px 0px 25px #F9ED32;
+}
+
+.footer-links {
+  background-color: #1A1A1A;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #F9ED32;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+  filter: drop-shadow(0px 0px 2px #F9ED32); 
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #252525; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F9ED32; 
+  border-radius: 10px; 
+  border: 2px solid #131313;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FFF225; 
+}
