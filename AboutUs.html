@@ -12,6 +12,9 @@
     margin: 0;
     padding: 0;
 }
+    header {
+         height: 70px; 
+     }
 
 
 .Abt-us {
@@ -62,7 +65,25 @@ footer {
     color: white;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+ 
+}
+.footer-links{
+    background-color: black;
+}
+.cta-button{
+    background-color: #F9ED32;
+    color: black;
+    padding: 12px 12px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 15px;
+    display: inline-block;
+}
+.cta-button :hover{
+    background-color: white;
+    color: black;
 }
     </style>
 </head>
@@ -77,15 +98,14 @@ footer {
                 <li><a href="./AboutUs.html" target="_self">About Us</a></li>
                 <li><a href="#">Products</a>
                     <ul class="dropdown">
-                        <li><a href="./Product1.html" target="_self">SE03 Lite</a></li>
-                        <li><a href="./Product2.html" target="_self">SE03</a></li>
-                        <li><a href="./Product3.html" target="_self">SE03 Max</a></li>
-                        <li><a href="./Compare.html" target="_self">Compare All</a></li>
+                        <li><a href="./Products.html" target="_self">SE03 Lite</a></li>
+                        <li><a href="./Products.html" target="_self">SE03</a></li>
+                        <li><a href="./Products.html" target="_self">SE03 Max</a></li>
+                        <li><a href="./Products.html" target="_self">Compare All</a></li>
                     </ul>
                 </li>
                 <li><a href="./Rentals.html" target="_self">Rentals</a></li>
                 <li><a href="./ContactUs.html" target="_self">Contact Us</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -105,6 +125,8 @@ footer {
         appealing scooters are engineered for longevity and reliability. Join us as we pioneer a new
         era in sustainable and dependable electric transportation.
        </p>
+       <a href="./ContactUs.html" class="cta-button"> Get in Touch</a>
+
     </div>
     <footer>
         <div class="footer-links">
