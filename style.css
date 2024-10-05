@@ -329,3 +329,60 @@ nav ul li ul.dropdown li:last-child {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #FFF225; 
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+    
+  }
+  header{
+    height: 80px;
+  }
+  nav ul{
+    position: relative;
+    top: 20px;
+  }
+.hero {
+    height: 60vh;
+    padding: 0 10px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+  .hero .option {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+.carousel-big {
+    width: 80%;
+  }
+  .carousel-item img {
+    width: 80px;
+    height: 80px;
+  }
+  .carousel-item p {
+    font-size: 16px;
+  }
+ .products {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .product {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  .product img {
+    width: 120px;
+  }
+
+  .footer-links {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .footer-links a {
+    margin: 5px;
+  }
+.social-icons img {
+    width: 25px;
+  }
+}
